@@ -1,0 +1,34 @@
+{
+  "name": "rv-image-optimize-cursor",
+  "displayName": "RV Image Optimize",
+  "version": "0.1.0",
+  "description": "Bring rv-image-optimize into Cursor for safe image compression, batch optimization, upload preparation, and framework-aware integration guidance.",
+  "author": {
+    "name": "ziji1224054593"
+  },
+  "homepage": "https://github.com/ziji1224054593/Rv-image-optimize",
+  "repository": "https://github.com/ziji1224054593/Rv-image-optimize",
+  "license": "ISC",
+  "logo": "Image Optimize.webp",
+  "keywords": [
+    "image-optimize",
+    "cursor-plugin",
+    "cli",
+    "compression",
+    "upload",
+    "vite",
+    "webpack"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "images",
+    "assets",
+    "automation",
+    "frontend",
+    "performance"
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "agents": "./agents/"
+}

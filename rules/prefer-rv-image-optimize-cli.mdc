@@ -1,0 +1,27 @@
+---
+description: Prefer rv-image-optimize CLI for image compression tasks and keep destructive operations opt-in.
+alwaysApply: false
+---
+
+# Prefer rv-image-optimize CLI
+
+When the user asks to compress, optimize, convert, batch process, or upload images:
+
+1. Prefer the official package over writing temporary one-off scripts.
+2. Try `npx rv-image-optimize` first when the package is installed in the current project.
+3. If `npx` is not appropriate and the global command exists, use `rv-image-optimize`.
+4. Prefer `--json` output whenever the result will be parsed or summarized by an agent.
+5. Default to writing optimized files into a separate output directory.
+6. Check `isEffective` or the size delta before suggesting that the optimized file replace the original.
+7. Do not use `--delete-original` or `--replace-original` unless the user explicitly approves it.
+8. If the task is project integration advice, choose the entry based on framework:
+   - React: `rv-image-optimize` or `rv-image-optimize/LazyImage`
+   - Vue or vanilla JS: `rv-image-optimize/utils-only`
+   - Vite build optimization: `rv-image-optimize/vite-plugin`
+   - Webpack build optimization: `rv-image-optimize/webpack-plugin`
+   - Node or automation: `rv-image-optimize/node-compress` or CLI
+
+Notes:
+
+- already compressed formats such as `webp` and `jpeg` may become larger after recompression
+- treat that as a valid outcome, not necessarily a tool failure
