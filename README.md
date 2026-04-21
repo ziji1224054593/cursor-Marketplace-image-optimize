@@ -15,7 +15,13 @@ It is intentionally thin: the plugin does not reimplement the image engine. Inst
 
 ## Installation and availability
 
-This plugin is saved under Cursor local plugins and is immediately available to Cursor.
+Install this plugin from Cursor Marketplace when it becomes available there.
+
+For local development or manual testing, place this repository under your local plugins directory:
+
+```text
+~/.cursor/plugins/local/rv-image-optimize-cursor
+```
 
 The underlying package still needs to be available in one of these ways:
 
@@ -68,9 +74,9 @@ So the correct decision rule is not "did the command run successfully", but "is 
 - prefer official package entry points over custom one-off scripts
 - check `isEffective` before suggesting replacement of originals
 
-## Marketplace direction
+## Marketplace readiness
 
-This local plugin is structured so it can be evolved into a Marketplace-ready plugin:
+This repository is structured for Marketplace submission:
 
 - valid `.cursor-plugin/plugin.json`
 - focused scope
@@ -80,4 +86,5 @@ This local plugin is structured so it can be evolved into a Marketplace-ready pl
 
 ## Repository
 
-Source project: https://github.com/ziji1224054593/Rv-image-optimize
+- Plugin repository: https://github.com/ziji1224054593/cursor-Marketplace-image-optimize
+- Core package repository: https://github.com/ziji1224054593/Rv-image-optimize
