@@ -1,7 +1,7 @@
 {
   "name": "rv-image-optimize-cursor",
   "displayName": "RV Image Optimize",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Bring rv-image-optimize into Cursor for safe image compression, batch optimization, upload preparation, and framework-aware integration guidance.",
   "author": {
     "name": "ziji1224054593"

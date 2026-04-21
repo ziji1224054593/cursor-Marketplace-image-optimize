@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+- Publish the first Marketplace-ready release of the RV Image Optimize Cursor plugin
+- Finalize plugin metadata, repository links, and asset-based logo packaging
+- Document validated `npx rv-image-optimize` usage and safe replacement guidance
+
 ## 0.1.0
 
 - Initial local Cursor plugin scaffold for `rv-image-optimize`
